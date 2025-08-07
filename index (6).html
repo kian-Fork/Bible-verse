@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bible Verses - Love, Forgiveness, Faith</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f9f7f7, #dbe2ef);
+      color: #112d4e;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #3f72af;
+      color: white;
+    }
+    h1 {
+      margin: 0;
+    }
+    section {
+      margin-top: 30px;
+    }
+    .verse {
+      background-color: #f9f7f7;
+      border-left: 5px solid #3f72af;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .daily-verse {
+      background-color: #ffffff;
+      border: 2px dashed #3f72af;
+      padding: 15px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #3f72af;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bible Verses</h1>
+    <p>Love, Forgiveness, Faith, Peace, and Hope</p>
+  </header>
+
+  <!-- 🌞 Daily Verse Section -->
+  <div class="daily-verse" id="dailyVerse">
+    Loading daily verse...
+  </div>
+
+  <!-- ❤️ LOVE -->
+  <section>
+    <h2>Verses About Love ❤️</h2>
+    <div class="verse">
+      <strong>1 Corinthians 13:4-5</strong><br>
+      "Love is patient, love is kind. It does not envy, it does not boast, it is not proud."
+    </div>
+    <div class="verse">
+      <strong>John 15:12</strong><br>
+      "My command is this: Love each other as I have loved you."
+    </div>
+    <div class="verse">
+      <strong>Romans 12:10</strong><br>
+      "Be devoted to one another in love. Honor one another above yourselves."
+    </div>
+  </section>
+
+  <!-- 🤝 FORGIVENESS -->
+  <section>
+    <h2>Verses About Forgiveness 🤝</h2>
+    <div class="verse">
+      <strong>Colossians 3:13</strong><br>
+      "Forgive as the Lord forgave you."
+    </div>
+    <div class="verse">
+      <strong>1 John 1:9</strong><br>
+      "If we confess our sins, he is faithful and just and will forgive us our sins."
+    </div>
+    <div class="verse">
+      <strong>Matthew 6:14</strong><br>
+      "For if you forgive others when they sin against you, your heavenly Father will also forgive you."
+    </div>
+  </section>
+
+  <!-- 🙏 FAITH -->
+  <section>
+    <h2>Verses About Faith 🙏</h2>
+    <div class="verse">
+      <strong>Hebrews 11:1</strong><br>
+      "Now faith is confidence in what we hope for and assurance about what we do not see."
+    </div>
+    <div class="verse">
+      <strong>Matthew 17:20</strong><br>
+      "If you have faith as small as a mustard seed, nothing will be impossible for you."
+    </div>
+    <div class="verse">
+      <strong>2 Corinthians 5:7</strong><br>
+      "For we live by faith, not by sight."
+    </div>
+  </section>
+
+  <!-- 🕊️ PEACE -->
+  <section>
+    <h2>Verses About Peace 🕊️</h2>
+    <div class="verse">
+      <strong>Philippians 4:7</strong><br>
+      "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus."
+    </div>
+    <div class="verse">
+      <strong>John 14:27</strong><br>
+      "Peace I leave with you; my peace I give you."
+    </div>
+    <div class="verse">
+      <strong>Isaiah 26:3</strong><br>
+      "You will keep in perfect peace those whose minds are steadfast, because they trust in you."
+    </div>
+  </section>
+
+  <!-- 🌟 HOPE -->
+  <section>
+    <h2>Verses About Hope 🌟</h2>
+    <div class="verse">
+      <strong>Jeremiah 29:11</strong><br>
+      "'For I know the plans I have for you,' declares the Lord, 'plans to prosper you and not to harm you, plans to give you hope and a future.'"
+    </div>
+    <div class="verse">
+      <strong>Romans 15:13</strong><br>
+      "May the God of hope fill you with all joy and peace as you trust in him."
+    </div>
+    <div class="verse">
+      <strong>Psalm 39:7</strong><br>
+      "But now, Lord, what do I look for? My hope is in you."
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Bible Verses | Spread Love, Forgiveness, Faith, Peace & Hope
+  </footer>
+
+  <script>
+    const verses = [
+      "📖 1 Corinthians 13:4 — Love is patient, love is kind.",
+      "📖 John 15:12 — Love each other as I have loved you.",
+      "📖 Romans 12:10 — Be devoted to one another in love.",
+      "📖 Colossians 3:13 — Forgive as the Lord forgave you.",
+      "📖 1 John 1:9 — He is faithful to forgive our sins.",
+      "📖 Matthew 6:14 — Forgive others and God will forgive you.",
+      "📖 Hebrews 11:1 — Faith is confidence in what we hope for.",
+      "📖 Matthew 17:20 — Faith as small as a mustard seed can move mountains.",
+      "📖 Philippians 4:7 — The peace of God will guard your hearts.",
+      "📖 Jeremiah 29:11 — Plans to give you hope and a future."
+    ];
+
+    const dailyVerse = document.getElementById("dailyVerse");
+    const randomIndex = Math.floor(Math.random() * verses.length);
+    dailyVerse.innerHTML = `<strong>Daily Verse:</strong><br>${verses[randomIndex]}`;
+  </script>
+
+</body>
+</html>
